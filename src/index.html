@@ -1,0 +1,907 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./input.css" rel="stylesheet">
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts Playfair, Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top py-4 px-[78px] border-b-2 border-gray-400">
+            <div class="container flex items-center justify-between">
+                <div class="clock-left flex">
+                    <img class="text-[15px]" src="./images/clock.svg" alt="">
+                    <span class="text-[#666666] pl-[10px] text-xs">Seshanba, May 9 - 2023</span>
+                </div>
+                <div class="header__contact flex items-center text-[#666666]">
+                    <div class="select-wrap flex items-center  border-r-2 border-r-gray-500 pr-[26px]">
+                        <img src="./images/chanel-icon.svg" alt="Chanel Icon">
+                        <select
+                            class="bg-transparent border-none outline-none cursor-pointer px-2 text-xs border-b-3 border-b-blue-400">
+                            <option>Namoz vaqtlari</option>
+                            <option>Dushanba</option>
+                            <option>Seshanba</option>
+                            <option>Chorshanba</option>
+                            <option>Payshanba</option>
+                            <option>Juma</option>
+                            <option>Shanba</option>
+                        </select>
+                    </div>
+                    <div class="contact__links pl-[24px] flex items-center">
+                        <span class="pr-[12px] text-xs">Bizni kuzating:</span>
+                        <div class="contact__link-icon flex gap-[16px] text-xl">
+                            <a href="#!">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom py-8 px-[78px] bg-gray-200">
+            <div class="container flex items-center justify-between">
+                <div class="logo">
+                    <a href="#!" class="title text-[#1E1E1E] text-xl font-playfair">
+                        Islomota.uz
+                    </a>
+                </div>
+                <div class="nav__wrap flex items-center">
+                    <div class="nav__main text-[#666666] flex gap-4 border-r-2 border-r-gray-400 pr-[26px]">
+                        <a href="#!" class="hover:text-[#1E1E1E] transition ease-in">Bosh sahifa</a>
+                        <a href="#!" class="hover:text-[#1E1E1E] transition ease-in">Yangiliklar</a>
+                        <a href="#!" class="hover:text-[#1E1E1E] transition ease-in">Maqolalar</a>
+                        <select
+                            class="bg-transparent border-none outline-none cursor-pointer px-2 text-sm hover:text-[#1E1E1E] transition ease-in">
+                            <option>Islom</option>
+                            <option>Islom</option>
+                            <option>Islom</option>
+                            <option>Islom</option>
+                            <option>Islom</option>
+                            <option>Islom</option>
+                            <option>Islom</option>
+                        </select>
+                        <a href="#!" class="hover:text-[#1E1E1E] transition ease-in">Masjid haqida</a>
+                        <select
+                            class="bg-transparent border-none outline-none cursor-pointer px-2 text-sm hover:text-[#1E1E1E] transition ease-in">
+                            <option>Multimedia</option>
+                            <option>Dushanba</option>
+                            <option>Seshanba</option>
+                            <option>Chorshanba</option>
+                            <option>Payshanba</option>
+                            <option>Juma</option>
+                            <option>Shanba</option>
+                        </select>
+                    </div>
+                    <button class="naw__search pl-[27px]">
+                        <img src="./images/nav-search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <!-- main -->
+        <main class="bg-cover py-[120px]" style="background-image: url(./images/main-bg.png)">
+            <div class="container flex text-center items-center">
+                <div class="main__content-wrap mx-auto">
+                    <img class="mx-auto mb-[56px]" src="./images/main-text-img.png" alt="">
+                    <h1 class="title text-[52px] text-white max-w-[850px] mb-[56px]">Islomota masjidi muhlislari bilan
+                        komillik sari intiling!
+                    </h1>
+                    <button class="bg-transparent border border-white py-4 px-8 text-white rounded-lg ">Biz
+                        haqimizda</button>
+                </div>
+            </div>
+        </main>
+        <!-- article -->
+        <section class="article px-[78px] pt-[56px] pb-[71px]">
+            <div class="container">
+                <div class="article-title mb-8 ">
+                    <span class="text-sm text-[#666666] mb-1">Jamoamiz tomonidan tayyorlangan</span>
+                    <h2 class="title text-[#1E1E1E] text-4xl font-medium">Maqolalar</h2>
+                </div>
+
+                <div class="grid grid-cols-3 gap-[24px] flex items-start">
+                    <div class="col-span-2 border rounded-lg relative ">
+                        <div
+                            class="card flex p-8 pr-[21px] border-b cursor-pointer hover:bg-gray-50 hover:scale-105 hover:rounded-lg transition ease-in">
+                            <img src="./images/article__card-1.png" alt="">
+                            <div class="card__item ml-8">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[26px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+                                <h2 class="title font-medium text-[#1E1E1E] text-2xl leading-8 mb-3">Georgiy Lentasining
+                                    ma’nosi
+                                    nima?</h2>
+                                <p class="text text-sm">O‘zA axborot agentligi ruhshunoslik fanlari nomzodi Mahmud
+                                    Yo‘ldoshevning Georgiy lentasi
+                                    haqidagi maqolasini chop etdi. Unda ushbu lentaning ma’nosi ochib berilgan.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="card flex p-8 pr-[21px] border-b cursor-pointer hover:bg-gray-50 hover:scale-105 hover:rounded-lg transition ease-in">
+                            <img src="./images/article__card-2.png" alt="">
+                            <div class="card__item ml-8">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 12</span>
+                                    </div>
+                                    <div class="flex items-center ml-[26px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">89</span>
+                                    </div>
+                                </div>
+                                <h2 class="title font-medium text-[#1E1E1E] text-2xl leading-8 mb-3">
+                                    Salomatlik uchun kuniga
+                                    necha soat uhlash kerak?
+                                </h2>
+                                <p class="text text-sm">
+                                    Kuniga 12 soat ishlasangiz ham, sizdagi samaradorlik oshib ketmaydi.
+                                    Qo‘shimcha ishga pul to‘langani bilan bu hayotingizdan nafratlanish va
+                                    sog‘lig‘ingizga
+                                    putur etkazish xavfini oshiradi. Lifehacker ish va hayot muvoz...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="card flex p-8 pb-[57px] pr-[21px] cursor-pointer hover:bg-gray-50 hover:scale-105 hover:rounded-lg transition ease-in">
+                            <img src="./images/article__card-3.png" alt="">
+                            <div class="card__item ml-8">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 23</span>
+                                    </div>
+                                    <div class="flex items-center ml-[26px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">128</span>
+                                    </div>
+                                </div>
+                                <h2 class="title font-medium text-[#1E1E1E] text-2xl leading-8 mb-3">
+                                    Bitcoin nima? Yohud
+                                    Maymun tijorati...
+                                </h2>
+                                <p class="text text-sm">
+                                    Bir qishloq atrofida juda ko‘p maymunlar yashar ekan. Kunlarning
+                                    birida qishloqqa bir savdogar kelib, bu maymunlarni sotib olishini aytibdi va har
+                                    bir
+                                    maymun uchun 100 dollar berishni taklif qilibdi....
+                                </p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="bg-white text-sm text-[#1E1E1E] py-4 px-6 border rounded-md absolute left-[32px] -bottom-[25px] hover:bg-gray-200 transition ease-in-out">Barchasini
+                            ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-span-1 border relative">
+                        <div
+                            class="card flex p-8 pr-[21px] border-b cursor-pointer hover:bg-gray-50 hover:scale-105 hover:rounded-lg transition ease-in">
+                            <img src="./images/article__card-4.png" alt="">
+                            <div class="card__item ml-6">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 12</span>
+                                    </div>
+                                </div>
+                                <p class="text text-sm">
+                                    Ular eshonmi? <br> Alloh Taolo o’zi hohlagan kunini, hohlagan narsasini, hohlagan
+                                    kishisini ulug’ qiladi va aqqli bandalar Alloh ulug’...
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card flex p-8 pr-[21px] border-b cursor-pointer hover:bg-gray-50 hover:scale-105 hover:rounded-lg transition ease-in">
+                            <img src="./images/article__card-5.png" alt="">
+                            <div class="card__item ml-6">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                </div>
+                                <p class="text text-sm">
+                                    3-may kuni “Yangi Hayot” Jome’siga ilk g’isht qo’yildi.
+                                    Tadbirda Sirdaryo viloyati bosh imom hatibi qatnashdilar va tadbirdan juda
+                                    minnatdor...
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card flex p-8 pb-[57px] pr-[21px] cursor-pointer hover:bg-gray-50 hover:scale-105 hover:rounded-lg transition ease-in">
+                            <img src="./images/article__card-6.png" alt="">
+                            <div class="card__item ml-6">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 11</span>
+                                    </div>
+                                </div>
+                                <p class="text text-sm">
+                                    Hakim at Termiziy mashoyiqlarning kiborlaridan, olam shayhi, himmat va sahovat
+                                    sohibi,
+                                    ilmi Rabboniy edil. Uning to’liq ismi Abu Abdulloh ibn Ali...
+                                </p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="bg-white text-sm text-[#1E1E1E] py-4 px-6 border rounded-md absolute left-[32px] -bottom-[25px]  hover:bg-gray-200 transition ease-in-out">Barchasini
+                            ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- global news -->
+        <section class="global__news bg-gray-50 pt-[56px] pb-[60px] px-[78px]">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between mb-9">
+                    <h2 class="title font-medium text-4xl">Dunyo yangiliklari</h2>
+                    <a href="#!" class="news__link text-[#00659D] text-sm border-b border-b-[#00659D]">Barchasini
+                        ko’rish</a>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper pb-[60px]">
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img1.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Ohirat boqiydir</h2>
+                                <p class="text mb-6 text-sm">
+                                    «Ey Odam farzandi! Menga xizmat qil, chunki Menga xizmat qilgan kishini
+                                    yaxshi ko‘raman va bandalarimni ham unga xizmat qildiraman. Albatta sen umringning
+                                    o‘tgan qismini Menga qancha osiylik qilganingni bilmaysan va qolgan qismida ham
+                                    qancha
+                                    osiylik qilishingni bilmaysan...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img2.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Ohirat boqiydir</h2>
+                                <p class="text mb-6 text-sm">
+                                    «Ey Odam farzandi! Menga xizmat qil, chunki Menga xizmat qilgan kishini
+                                    yaxshi ko‘raman va bandalarimni ham unga xizmat qildiraman. Albatta sen umringning
+                                    o‘tgan qismini Menga qancha osiylik qilganingni bilmaysan va qolgan qismida ham
+                                    qancha
+                                    osiylik qilishingni bilmaysan...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img3.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Ohirat boqiydir</h2>
+                                <p class="text mb-6 text-sm">
+                                    «Ey Odam farzandi! Menga xizmat qil, chunki Menga xizmat qilgan kishini
+                                    yaxshi ko‘raman va bandalarimni ham unga xizmat qildiraman. Albatta sen umringning
+                                    o‘tgan qismini Menga qancha osiylik qilganingni bilmaysan va qolgan qismida ham
+                                    qancha
+                                    osiylik qilishingni bilmaysan...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img4.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Ohirat boqiydir</h2>
+                                <p class="text mb-6 text-sm">
+                                    «Ey Odam farzandi! Menga xizmat qil, chunki Menga xizmat qilgan kishini
+                                    yaxshi ko‘raman va bandalarimni ham unga xizmat qildiraman. Albatta sen umringning
+                                    o‘tgan qismini Menga qancha osiylik qilganingni bilmaysan va qolgan qismida ham
+                                    qancha
+                                    osiylik qilishingni bilmaysan...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img2.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Ohirat boqiydir</h2>
+                                <p class="text mb-6 text-sm">
+                                    «Ey Odam farzandi! Menga xizmat qil, chunki Menga xizmat qilgan kishini
+                                    yaxshi ko‘raman va bandalarimni ham unga xizmat qildiraman. Albatta sen umringning
+                                    o‘tgan qismini Menga qancha osiylik qilganingni bilmaysan va qolgan qismida ham
+                                    qancha
+                                    osiylik qilishingni bilmaysan...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- uzb news -->
+        <section class="uzb__news pt-[56px] pb-[60px] px-[78px]"> 
+            <div class="container">
+                <div class="flex items-center justify-between mb-9">
+                    <h2 class="title font-medium text-4xl">O’zbekiston yangiliklari</h2>
+                    <a href="#!" class="news__link text-[#00659D] text-sm border-b border-b-[#00659D]">Barchasini
+                        ko’rish
+                    </a>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper pb-[60px]">
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img3.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Muftiy hazrat «Ho’ja Ishoqi
+                                    Vali» masjidiga tashrif buyurdilar</h2>
+                                <p class="text mb-6 text-sm">
+                                    Бугун, 25 июль куни Ўзбекистон мусулмонлари идораси раиси, муфтий Нуриддин домла
+                                    ҳазратлари Самарқанд шаҳридаги “Хўжа Исҳоқи Вали” масжидига пешин намозига...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img4.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Prezident Hakim Termiziy
+                                    maqbarasini ziyorat qildilar</h2>
+                                <p class="text mb-6 text-sm">
+                                    Ўзбекистон Республикаси Президенти Шавкат Мирзиёев Сурхондарё вилоятига ташриф
+                                    буюрди. Давлатимиз раҳбари амалий сафарини, анъанага кўра, Ҳаким Термизий
+                                    мақбараси...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img2.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">O’zbekiston delegaciyasi Al
+                                    Azharga tashrif buyurdi</h2>
+                                <p class="text mb-6 text-sm">
+                                    O‘zbekiston delegatsiyasi Al-Azharning “Ekstremizmga qarshi kurashish
+                                    observatoriyasi va elektron fatvolar bo‘yicha xalqaro markaz” faoliyati bilan
+                                    yaqindan tanishdi.
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img1.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Ohirat boqiydir</h2>
+                                <p class="text mb-6 text-sm">
+                                    «Ey Odam farzandi! Menga xizmat qil, chunki Menga xizmat qilgan kishini
+                                    yaxshi ko‘raman va bandalarimni ham unga xizmat qildiraman. Albatta sen umringning
+                                    o‘tgan qismini Menga qancha osiylik qilganingni bilmaysan va qolgan qismida ham
+                                    qancha
+                                    osiylik qilishingni bilmaysan...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide flex items-start p-8 pr-[19px] bg-transparent border rounded-lg gap-[34px]">
+                            <img src="./images/global-news-img4.png" alt="">
+                            <div class="text-start">
+                                <div class="days flex items-center mb-3">
+                                    <div class="flex items-center">
+                                        <img src="./images/news__icon.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                        <img src="./images/card__icon1.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                    </div>
+                                    <div class="flex items-center ml-[13px]">
+                                        <img src="./images/card__icon2.png" alt="">
+                                        <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Prezident Hakim Termiziy
+                                    maqbarasini ziyorat qildilar</h2>
+                                <p class="text mb-6 text-sm">
+                                    Ўзбекистон Республикаси Президенти Шавкат Мирзиёев Сурхондарё вилоятига ташриф
+                                    буюрди. Давлатимиз раҳбари амалий сафарини, анъанага кўра, Ҳаким Термизий
+                                    мақбараси...
+                                </p>
+                                <button
+                                    class="text-sm text-[#1E1E1E] py-4 px-6 border rounded-md hover:bg-gray-200 transition ease-in-out">
+                                    Barchasini ko’rish <i class="text-[#666666] fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- videos -->
+        <section class="videos py-[56px] px-[77px] bg-gray-50">
+            <div class="container">
+                <div class="flex items-center justify-between mb-9">
+                    <h2 class="title font-medium text-4xl">Videolavhalar</h2>
+                    <a href="#!" class="news__link text-[#00659D] text-sm border-b border-b-[#00659D]">
+                        Barchasini ko’rish
+                    </a>
+                </div>
+
+                <div class="videos__wrap mb-[32px] flex items-start justify-between gap-[24px]">
+                    <div class="videos__item bg-transparent">
+                        <div class="videos__img-wrap relative">
+                            <img src="./images/videos-img1.png" alt="">
+                            <img src="./images/videos__play-icon.png" alt="" class="absolute top-[45%] left-[50%] -translate-x-[50%] cursor-pointer hover:scale-105">
+                        </div>
+                        <div class="text-start mt-6">
+                            <div class="days flex items-center mb-3">
+                                <div class="flex items-center">
+                                    <img src="./images/news__icon.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                </div>
+                                <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                    <img src="./images/card__icon1.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                </div>
+                                <div class="flex items-center ml-[13px]">
+                                    <img src="./images/card__icon2.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                </div>
+                            </div>
+
+                            <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Ramazon hayiti tabrigi</h2>
+                            <p class="text mb-6 text-sm max-w-[630px]">
+                                O’zbekiston Respublikasi Musulmonlari idorasi raisi, muftiy hazratlari barcha
+                                vatandoshlarni Ramazon hayiti bilan muborakbod ettilar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="videos__item bg-transparent">
+                        <div class="videos__img-wrap relative">
+                            <img src="./images/videos-img2.png" alt="">
+                            <img src="./images/videos__play-icon.png" alt="" class="absolute top-[45%] left-[50%] -translate-x-[50%] cursor-pointer hover:scale-105">
+                        </div>
+                        <div class="text-start">
+                            <div class="days flex items-center mb-3 mt-6">
+                                <div class="flex items-center">
+                                    <img src="./images/news__icon.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                </div>
+                                <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                    <img src="./images/card__icon1.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                </div>
+                                <div class="flex items-center ml-[13px]">
+                                    <img src="./images/card__icon2.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                </div>
+                            </div>
+
+                            <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Islom Civilizaciyasi Markazining
+                                qurilishi qanday bosqichda?</h2>
+                            <p class="text mb-6 text-sm max-w-[630px]">
+                                Islom Civilizicasiyasi Markazining qurilishi qanday boshqichda? Bu markaz yurtimiz,
+                                halqimiz uchun qanchalik ahamiyatli? Markaz bunyod etilgach, Eski shaxat qay darajada..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videos__mini-wrap flex items-start justify-between gap-[24px]">
+                    <div class="videos__item bg-transparent w-[300px]">
+                        <div class="videos__img-wrap relative">
+                            <img src="./images/videos-img3.png" alt="">
+                            <img src="./images/videos__play-icon.png" alt="" class="absolute top-[45%] left-[50%] -translate-x-[50%] cursor-pointer hover:scale-105">
+                        </div>
+                        <div class="text-start mt-6">
+                            <div class="days flex items-center mb-3">
+                                <div class="flex items-center">
+                                    <img src="./images/news__icon.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                </div>
+                                <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                    <img src="./images/card__icon1.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                </div>
+                                <div class="flex items-center ml-[13px]">
+                                    <img src="./images/card__icon2.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                </div>
+                            </div>
+
+                            <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Homidjon Ishmatbekov bilan suhbat</h2>
+                            
+                        </div>
+                    </div>
+                    <div class="videos__item bg-transparent w-[300px]">
+                        <div class="videos__img-wrap relative">
+                            <img src="./images/videos-img4.png" alt="">
+                            <img src="./images/videos__play-icon.png" alt="" class="absolute top-[45%] left-[50%] -translate-x-[50%] cursor-pointer hover:scale-105">
+                        </div>
+                        <div class="text-start">
+                            <div class="days flex items-center mb-3 mt-6">
+                                <div class="flex items-center">
+                                    <img src="./images/news__icon.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                </div>
+                                <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                    <img src="./images/card__icon1.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                </div>
+                                <div class="flex items-center ml-[13px]">
+                                    <img src="./images/card__icon2.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                </div>
+                            </div>
+
+                            <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">
+                                Mehnatsevar halqimiz bor nima g’amimiz bor
+                            </h2>
+                           
+                        </div>
+                    </div>
+                    <div class="videos__item bg-transparent w-[300px]">
+                        <div class="videos__img-wrap relative">
+                            <img src="./images/videos-img5.png" alt="">
+                            <img src="./images/videos__play-icon.png" alt="" class="absolute top-[45%] left-[50%] -translate-x-[50%] cursor-pointer hover:scale-105">
+                        </div>
+                        <div class="text-start mt-6">
+                            <div class="days flex items-center mb-3">
+                                <div class="flex items-center">
+                                    <img src="./images/news__icon.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                </div>
+                                <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                    <img src="./images/card__icon1.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                </div>
+                                <div class="flex items-center ml-[13px]">
+                                    <img src="./images/card__icon2.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                </div>
+                            </div>
+
+                            <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">Nima sababdan Bomdod namoziga uyg’onmaysiz?</h2>
+                            
+                        </div>
+                    </div>
+                    <div class="videos__item bg-transparent w-[300px]">
+                        <div class="videos__img-wrap relative">
+                            <img src="./images/videos-img6.png" alt="">
+                            <img src="./images/videos__play-icon.png" alt="" class="absolute top-[45%] left-[50%] -translate-x-[50%] cursor-pointer hover:scale-105">
+                        </div>
+                        <div class="text-start">
+                            <div class="days flex items-center mb-3 mt-6">
+                                <div class="flex items-center">
+                                    <img src="./images/news__icon.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">Matbuot hizmati</span>
+                                </div>
+                                <div class="flex items-center ml-[13px] border-r border-l px-[13px]">
+                                    <img src="./images/card__icon1.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">May 14</span>
+                                </div>
+                                <div class="flex items-center ml-[13px]">
+                                    <img src="./images/card__icon2.png" alt="">
+                                    <span class="pl-2 text-[#666666;] text-xs">45</span>
+                                </div>
+                            </div>
+
+                            <h2 class="title text-xl font-medium text-[#1E1E1E] mb-3">
+                                Qadriyatlar tiklangan yangi O’zbekiston vatanim mening.
+                            </h2>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- photos -->
+        <section class="photo pt-[56px] px-[78px] pb-[113px]">
+            <div class="container">
+                <div class="flex items-center justify-between mb-9">
+                    <h2 class="title font-medium text-4xl">Videolavhalar</h2>
+                    <a href="#!" class="news__link text-[#00659D] text-sm border-b border-b-[#00659D]">
+                        Barchasini ko’rish
+                    </a>
+                </div>
+
+                <div class="photo__wrap ">
+                    <div class="videos__item ">
+                        <div class="videos__item flex items-start justify-between gap-[24px] mb-[24px]">
+                            <div class="videos__img-wrap">
+                                <img src="./images/videos-img5.png" alt="">
+                            </div>
+                            <div class="videos__img-wrap">
+                                <img src="./images/videos-img3.png" alt="">
+                            </div>
+                            <div class="videos__img-wrap">
+                                <img src="./images/videos-img4.png" alt="">
+                            </div>
+                            <div class="videos__img-wrap">
+                                <img src="./images/videos-img6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="videos__item flex items-start justify-between gap-[24px]">
+                            <div class="videos__img-wrap">
+                                <img src="./images/videos-img4.png" alt="">
+                            </div>
+                            <div class="videos__img-wrap">
+                                <img src="./images/videos-img6.png" alt="">
+                            </div>
+                            <div class="videos__img-wrap">
+                                <img src="./images/videos-img5.png" alt="">
+                            </div>
+                            <div class="videos__img-wrap col-span-1">
+                                <img src="./images/videos-img3.png" alt="">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- footer -->
+        <section class="footer bg-gray-50 pt-[57px] pb-[70px] px-[78px]">
+            <div class="container flex justify-between">
+                <div class="footer_logo flex gap-[16px]">
+                    <img src="./images/footer-logo.png" alt="">
+                    <div class="text-[#666666] text-sm">
+                        <p class="footer__logo-text mb-3 max-w-[500px]">
+                            © 2023-2025, «Ислом ота» жомеъ масжидининг расмий web сайти. 
+                            Барча ҳуқуқлар ҳимояланган. 
+                        </p>
+                        <p class="">Сайтдан маълумот олинганда манба кўрсатилиши шарт. </p>
+                    </div>
+                </div>
+
+                <div class="footer__link text-end text-[#666666]">
+                    <p class="footer__address text-sm max-w-[400px] mb-[22px]">
+                        Манзил: Яшнобод тумани, Фарғона йўли кўчаси, 51 уй.
+                        Телефон: +99871 299 58 82.
+                    </p>
+                    <div class="footer__link-icon flex items-end justify-end gap-[16px] text-xl">
+                        <a href="#!">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+    <!-- swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

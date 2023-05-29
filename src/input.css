@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url(https://fonts.google.com/specimen/Playfair+Display?query=Playfair+Display); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    /* max-width: 1280px; */
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+}
+
+/* swipper............ */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 640px !important; */
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+}
+
+/* ................ */
+.swiper-pagination-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-pagination-bullet-active {
+    width: 16px !important;
+    height: 16px !important;
+    background: linear-gradient(0deg, rgba(102, 102, 102, 0.2), rgba(102, 102, 102, 0.2)), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF !important;
+}
+.swiper-pagination-bullet{
+    background: linear-gradient(0deg, rgba(102, 102, 102, 0.2), rgba(102, 102, 102, 0.2)), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+}
+
+@layer components {
+    .container {
+        @apply mx-auto max-w-7xl;
+    }
+}
